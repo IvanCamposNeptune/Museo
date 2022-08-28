@@ -73,7 +73,7 @@ public class SC_FPSController : MonoBehaviour
     public void OnTriggerEnter(Collider other)
 	{
 		 
-        if(other.tag =="Teleport")
+        if(other.tag =="Telepuerto_1")
         {
             SceneManager.LoadScene (sceneName);
         }
