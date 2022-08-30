@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003995703, g: 0.0002179264, b: 0.000000051515347,
+  m_IndirectSpecularColor: {r: 0.003995703, g: 0.0002179262, b: 0.000000051515347,
     a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -375,6 +375,21 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneName
       value: SampleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437507663353616222, guid: c14c2161da2db1243b5d4e6315bfe00f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437507663353616222, guid: c14c2161da2db1243b5d4e6315bfe00f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437507663353616222, guid: c14c2161da2db1243b5d4e6315bfe00f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.07
       objectReference: {fileID: 0}
     - target: {fileID: 5548242413606277636, guid: c14c2161da2db1243b5d4e6315bfe00f,
         type: 3}
@@ -9206,6 +9221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: SampleScene
+  sceneName2: 
 --- !u!1 &1173236253
 GameObject:
   m_ObjectHideFlags: 0
