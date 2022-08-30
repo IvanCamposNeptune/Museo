@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Iglesia.unity
     guid: 32a22e1763e365a4d83118cf33fe2760
+  - enabled: 1
+    path: Assets/Scenes/Red.unity
+    guid: 7779d0417619e2f418f464260198d9f8
   m_configObjects: {}

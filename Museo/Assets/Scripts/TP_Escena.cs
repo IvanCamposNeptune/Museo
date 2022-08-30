@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class TP_Escena : MonoBehaviour
 {
     public string sceneName;
+    public string sceneName2;
     // Start is called before the first frame update
     
     // Update is called once per frame
@@ -13,6 +14,9 @@ public class TP_Escena : MonoBehaviour
     {
         if(Other.tag == "Player"){
             SceneManager.LoadScene(sceneName);
+        }
+        if(Other.tag == "Player"){
+            SceneManager.LoadScene(sceneName2);
         }
     }
 }

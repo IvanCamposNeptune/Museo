@@ -51,6 +51,7 @@ public class SC_FPSController : MonoBehaviour
     public float Yposition=0.0f;
     public float Zposition=0f;
     public string sceneName;
+    public string sceneName2;
 
     ////////////////////
 
@@ -76,6 +77,10 @@ public class SC_FPSController : MonoBehaviour
         if(other.tag =="Telepuerto_1")
         {
             SceneManager.LoadScene (sceneName);
+        }
+        if(other.tag =="Telepuerto_2")
+        {
+            SceneManager.LoadScene (sceneName2);
         }
 
         if(other.tag =="Teletrans")
