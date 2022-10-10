@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &41239515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5166897303339026622, guid: c14c2161da2db1243b5d4e6315bfe00f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5437507663204268586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &140543070
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +558,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 86090abde36c7b84eb535d4ad23be568, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.5
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -1393,6 +1399,7 @@ MonoBehaviour:
   angulo: {x: 0, y: 0, z: 0, w: 0}
   grado: 0
   vel: 1
+  tarjet: {fileID: 41239515}
   rugido: {fileID: 1789617674}
 --- !u!4 &868979147 stripped
 Transform:
@@ -1615,8 +1622,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a5c181db3a6c15f46856fde00529c373,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c181db3a6c15f46856fde00529c373,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c181db3a6c15f46856fde00529c373,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a5c181db3a6c15f46856fde00529c373,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.009405
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a5c181db3a6c15f46856fde00529c373,
         type: 3}
@@ -1626,7 +1648,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a5c181db3a6c15f46856fde00529c373,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.590532
+      value: 12.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a5c181db3a6c15f46856fde00529c373,
         type: 3}
@@ -2245,7 +2267,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0dd1dd496606c614bab7a0ff0bc0ca3f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.7
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -2253,7 +2275,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 40
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -2484,6 +2506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166897303339026622, guid: c14c2161da2db1243b5d4e6315bfe00f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5437507663223088898, guid: c14c2161da2db1243b5d4e6315bfe00f,
         type: 3}
