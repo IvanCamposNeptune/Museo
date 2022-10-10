@@ -12,7 +12,7 @@ public class Enemy : MonoBehaviour
     public float grado;
     public int vel = 4;
 
-    public AudioSource audioSource;
+    public AudioSource rugido;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class Enemy : MonoBehaviour
                 break;
 
             case 1:
-                audioSource.Play();
+                rugido.Play();
                 grado = Random.Range(0, 360);
                 angulo = Quaternion.Euler(0, grado, 0);
                 rutina++;
