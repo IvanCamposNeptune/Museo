@@ -141,8 +141,6 @@ public class SC_FPSController : MonoBehaviour
 
 
 
-
-
     void Update()
     {
         //Animacion
