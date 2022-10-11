@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Telepuerto_1
   - Telepuerto_2
-  - ItemVidas
-  - Enemy
   layers:
   - Default
   - TransparentFX
