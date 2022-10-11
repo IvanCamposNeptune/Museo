@@ -40,7 +40,7 @@ public class SC_FPSController : MonoBehaviour
 	public Text TextAzimut;
     public Text NombreUsuario;
     public Text TextMuertes;
-	int contadorVidas = 3;
+	int contadorVidas;
     int contadorMonedas;
     int contadorPociones;
     int contadorMuertes;
@@ -75,8 +75,6 @@ public class SC_FPSController : MonoBehaviour
         // Lock cursor
         //Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-
-        TextVidas.text = "Vidas: " + contadorVidas;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -107,12 +105,13 @@ public class SC_FPSController : MonoBehaviour
          { 
             Destroy(other.gameObject);
             contadorVidas=contadorVidas+1;
-            TextVidas.text ="Vidas: "+contadorVidas; 
+            TextVidas.text =""+contadorVidas; 
          }
-         if(other.tag == "Enemy")
-         {
-            contadorVidas = contadorVidas - 1;
-            TextVidas.text = "Vidas: " + contadorVidas;
+         if(other.tag == "ItemMuertes")
+         { 
+            Destroy(other.gameObject);
+            contadorMuertes=contadorMuertes+1;
+            TextMuertes.text =""+contadorMuertes; 
          }
 
          if(other.tag == "ItemPociones")
