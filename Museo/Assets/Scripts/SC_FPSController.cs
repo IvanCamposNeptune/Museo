@@ -107,7 +107,7 @@ public class SC_FPSController : MonoBehaviour
          {
             contadorVidas = contadorVidas - 1;
             TextVidas.text = "Vidas: " + contadorVidas;
-        }
+         }
 
          if(other.tag == "ItemPociones")
          { 
