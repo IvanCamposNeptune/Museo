@@ -53,7 +53,13 @@ public class SC_FPSController : MonoBehaviour
     public string sceneName;
     public string sceneName2;
 
-    ////////////////////
+    ///////// Disparo de arma ///////////
+    public GameObject Bala;
+    public Transform SpawnPoint;
+    public float shotForce = 1500;
+    public float shotRate = 0.5f;
+    private float shotRateTime = 0;
+
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -140,9 +146,21 @@ public class SC_FPSController : MonoBehaviour
     }*/
 
 
-
     void Update()
     {
+        //Disparo
+        if(Input.GetButtonDown("Fire1"))
+        {
+            if(Time.time>shotRateTime)
+            {
+                GameObject newBala;
+                newBala = Instantiate(Bala,SpawnPoint.position, SpawnPoint.rotation);
+                newBala.GetComponent<Rigidbody>().AddForce(SpawnPoint.forward*shotForce);
+                shotRateTime = Time.time + shotRate;
+                Destroy (newBala, 2);
+            }
+        }
+
         //Animacion
         x = Input.GetAxis("Horizontal");
         y = Input.GetAxis("Vertical");
@@ -190,6 +208,8 @@ public class SC_FPSController : MonoBehaviour
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+
+
     }
 }
 
