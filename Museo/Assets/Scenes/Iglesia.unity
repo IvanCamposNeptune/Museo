@@ -15335,6 +15335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8672379872757321149, guid: 236c95ee77fda0a45b9ae432843e95c6,
+        type: 3}
+      propertyPath: sceneName
+      value: SampleScene
+      objectReference: {fileID: 0}
     - target: {fileID: 9210075602471680187, guid: 236c95ee77fda0a45b9ae432843e95c6,
         type: 3}
       propertyPath: m_RootOrder

@@ -54,7 +54,7 @@ public class SC_FPSController : MonoBehaviour
     public string sceneName2;
 
     ///////// Disparo de arma ///////////
-    public GameObject Bala;
+    public GameObject bala;
     public Transform SpawnPoint;
     public float shotForce = 1500;
     public float shotRate = 0.5f;
@@ -153,11 +153,11 @@ public class SC_FPSController : MonoBehaviour
         {
             if(Time.time>shotRateTime)
             {
-                GameObject newBala;
-                newBala = Instantiate(Bala,SpawnPoint.position, SpawnPoint.rotation);
-                newBala.GetComponent<Rigidbody>().AddForce(SpawnPoint.forward*shotForce);
+                GameObject balaPrefabInstanc;
+                balaPrefabInstanc = Instantiate(bala,SpawnPoint.position, SpawnPoint.rotation);
+                balaPrefabInstanc.GetComponent<Rigidbody>().AddForce(SpawnPoint.forward*shotForce);
                 shotRateTime = Time.time + shotRate;
-                Destroy (newBala, 2);
+                Destroy (balaPrefabInstanc, 2);
             }
         }
 
