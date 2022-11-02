@@ -9,7 +9,6 @@ TagManager:
   - Enemy
   - ItemVidas
   - Disparo
-  - Telepuerto_3
   layers:
   - Default
   - TransparentFX

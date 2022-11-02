@@ -52,7 +52,6 @@ public class SC_FPSController : MonoBehaviour
     public float Zposition=0f;
     public string sceneName;
     public string sceneName2;
-   
 
     ////////////////////
 
@@ -106,8 +105,8 @@ public class SC_FPSController : MonoBehaviour
          }
          if(other.tag == "Enemy")
          {
-            SceneManager.LoadScene (sceneName2);
-            
+            contadorVidas = contadorVidas - 1;
+            TextVidas.text = "Notas: " + contadorVidas;
          }
 
          if(other.tag == "ItemPociones")
