@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 475f55003d9d6f84d853213dd0a82d0d, type: 3}
+  m_Texture: {fileID: 2800000, guid: cb6d1d3b658bbcb49aba2110e26cca17, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -2903,7 +2903,7 @@ PrefabInstance:
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.56
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
@@ -2913,12 +2913,12 @@ PrefabInstance:
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.04
+      value: -15.29
       objectReference: {fileID: 0}
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
@@ -2928,7 +2928,7 @@ PrefabInstance:
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
@@ -2943,7 +2943,7 @@ PrefabInstance:
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 8076212778123958731, guid: 545c6cca72b7d0142a5246bb20bde784,
         type: 3}
