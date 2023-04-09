@@ -71,7 +71,7 @@ public class SC_FPSController : MonoBehaviour
         //Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
-        TextVidas.text = "Vidas: " + contadorVidas;
+        //TextVidas.text = "Vidas: " + contadorVidas;
     }
 
     public void OnTriggerEnter(Collider other)
@@ -102,17 +102,17 @@ public class SC_FPSController : MonoBehaviour
          { 
             Destroy(other.gameObject);
             contadorVidas=contadorVidas+1;
-            TextVidas.text ="Vidas: "+contadorVidas; 
+            // TextVidas.text ="Vidas: "+contadorVidas; 
          }
          if(other.tag == "Enemy")
          {
-<<<<<<< HEAD
+
             contadorVidas = contadorVidas - 1;
-            TextVidas.text = "Vidas: " + contadorVidas;
-=======
+            // TextVidas.text = "Vidas: " + contadorVidas;
+
             SceneManager.LoadScene (sceneName2);
             
->>>>>>> parent of 7787dd2 (Revert "ayuda llamen a dios")
+
          }
 
          if(other.tag == "ItemPociones")
